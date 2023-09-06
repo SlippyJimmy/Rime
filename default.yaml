@@ -12,13 +12,13 @@ config_version: '2023-08-07'
 # 方案列表
 schema_list:
   # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除。
-  - schema: rime_ice               # 雾凇拼音（全拼）
-  - schema: double_pinyin          # 自然码双拼
-  - schema: double_pinyin_abc      # 智能 ABC 双拼
-  - schema: double_pinyin_mspy     # 微软双拼
-  - schema: double_pinyin_sogou    # 搜狗双拼
+  # - schema: rime_ice               # 雾凇拼音（全拼）
+  # - schema: double_pinyin          # 自然码双拼
+  # - schema: double_pinyin_abc      # 智能 ABC 双拼
+  # - schema: double_pinyin_mspy     # 微软双拼
+  # - schema: double_pinyin_sogou    # 搜狗双拼
   - schema: double_pinyin_flypy    # 小鹤双拼
-  - schema: double_pinyin_ziguang  # 紫光双拼
+  # - schema: double_pinyin_ziguang  # 紫光双拼
 
 
 # 菜单
@@ -175,11 +175,11 @@ key_binder:
 
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
-    - { when: composing, accept: Shift+Tab, send: Shift+Left }
-    - { when: composing, accept: Tab, send: Shift+Right }
+    # - { when: composing, accept: Shift+Tab, send: Shift+Left }
+    # - { when: composing, accept: Tab, send: Shift+Right }
     # Tab / Shift+Tab 翻页
-    # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
-    # - { when: has_menu, accept: Tab, send: Page_Down }
+    - { when: has_menu, accept: Shift+Tab, send: Page_Up }
+    - { when: has_menu, accept: Tab, send: Page_Down }
 
     # Option/Alt + ←/→ 切换光标至下/上一个拼音
     - { when: composing, accept: Alt+Left, send: Shift+Left }
